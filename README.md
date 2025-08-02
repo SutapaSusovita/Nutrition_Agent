@@ -13,6 +13,7 @@ Try the deployed agent:
 
 🔗 **[IBM Watsonx Agent (Public Endpoint)](https://us-south.ml.cloud.ibm.com/ml/v4/deployments/b04b6555-04fb-4450-8bcc-b3c774efaae2/ai_service_stream?version=2021-05-01)**  
 > ⚠️ Requires IAM token — see below for how to query it.
+
 import requests
 
 url = "https://us-south.ml.cloud.ibm.com/ml/v4/deployments/b04b6555-04fb-4450-8bcc-b3c774efaae2/ai_service_stream?version=2021-05-01"
