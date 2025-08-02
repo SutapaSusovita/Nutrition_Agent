@@ -63,7 +63,7 @@ Nutrition Agent is an AI-powered assistant that:
 | AI Agent Platform   | [IBM Watsonx AI Agent Builder](https://www.ibm.com/products/watsonx-assistant) |
 | Deployment          | IBM Cloud                        |
 | Language Model      | Watsonx Granite LLM (LLM-as-a-service) |
-| Input Modalities    | Text (via chat UI), supports extensions for voice & image |
+| Input Modalities    | Text (via chat UI) |
 | Inference API       | Public & private endpoints for integration |
 | Personalization     | Contextual memory & conditional logic |
 
