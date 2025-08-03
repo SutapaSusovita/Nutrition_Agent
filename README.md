@@ -75,4 +75,6 @@ Nutrition Agent is an AI-powered assistant that:
 User Input → Watsonx AI Agent (LLM-powered logic)
           ↘ Fetch health profile / preferences
            ↘ Generate meal plan / swap / explanation
-            ↘ Return output (text/image response)
+            ↘ Return output (text/image response)```
+📸 **Working Demo:** Please refer to the uploaded PDF file (`demo_screenshots.pdf`) for screenshots showcasing the functional flow and responses of the deployed model.
+
