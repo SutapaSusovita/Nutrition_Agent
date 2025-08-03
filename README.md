@@ -16,19 +16,27 @@ Try the deployed agent:
 
 import requests
 
-url = "https://us-south.ml.cloud.ibm.com/ml/v4/deployments/b04b6555-04fb-4450-8bcc-b3c774efaae2/ai_service_stream?version=2021-05-01"
-headers = {
-    "Content-Type": "application/json",
-    "Authorization": "Bearer YOUR_IAM_TOKEN"
-}
-data = {
-    "input": {
-        "text": "Suggest a high-protein vegetarian Indian lunch for someone with PCOS"
-    }
-}
-response = requests.post(url, headers=headers, json=data)
-print(response.json())
+# NOTE: you must manually set API_KEY below using information retrieved from your IBM Cloud account (https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/ml-authentication.html?context=wx)
+API_KEY = "<your API key>"
+token_response = requests.post('https://iam.cloud.ibm.com/identity/token', data={"apikey": API_KEY, "grant_type": 'urn:ibm:params:oauth:grant-type:apikey'})
+mltoken = token_response.json()["access_token"]
 
+header = {'Content-Type': 'application/json', 'Authorization': 'Bearer ' + mltoken}
+
+# NOTE:  manually define and pass the array(s) of values to be scored in the next line
+payload_scoring = {"messages":[{"content":"","role":""}]}
+
+response_scoring = requests.post('https://us-south.ml.cloud.ibm.com/ml/v4/deployments/b04b6555-04fb-4450-8bcc-b3c774efaae2/ai_service_stream?version=2021-05-01', json=payload_scoring,
+ headers={'Authorization': 'Bearer ' + mltoken})
+
+print("Scoring response")
+try:
+    print(response_scoring.json())
+except ValueError:
+    print(response_scoring.text)
+except Exception as e:
+    print(f"An unexpected error occurred: {e}")
+    
 This endpoint requires an IBM IAM token. To test the agent:
 > - Use your own IBM Cloud account to generate an IAM token
 > - Or request temporary access from the author
