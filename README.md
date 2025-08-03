@@ -76,5 +76,5 @@ User Input → Watsonx AI Agent (LLM-powered logic)
           ↘ Fetch health profile / preferences
            ↘ Generate meal plan / swap / explanation
             ↘ Return output (text/image response)
-## 📸 **Working Demo:** Please refer to the uploaded PDF file (`demo_screenshots.pdf`) for screenshots showcasing the functional flow and responses of the deployed model.
+📸 **Working Demo:** Please refer to the uploaded PDF file (`demo_screenshots.pdf`) for screenshots showcasing the functional flow and responses of the deployed model.
 
