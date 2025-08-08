@@ -7,15 +7,6 @@ In an era of growing health awareness, most diet tools remain **generic**, lacki
 
 ---
 
-## 🚀 Live Demo
-
-Try the deployed agent:
-
-🔗 **[IBM Watsonx Agent (Public Endpoint)](https://us-south.ml.cloud.ibm.com/ml/v4/deployments/b04b6555-04fb-4450-8bcc-b3c774efaae2/ai_service_stream?version=2021-05-01)**  
-> ⚠️ Requires IAM token.
-
----
-
 ## 🎯 Problem Statement
 
 > "How can we provide truly personalized, explainable, and scalable nutrition guidance using generative AI?"
