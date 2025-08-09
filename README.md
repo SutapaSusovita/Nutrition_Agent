@@ -17,6 +17,18 @@ In an era of growing health awareness, most diet tools remain **generic**, lacki
 - In-person consultations are time/resource limited
 
 ---
+**How to Test the Nutrition AI Agent**
+- Open the provided view-only Google Colab link to explore the notebook without cloning the repo.
+
+- To run the code, make a copy of the notebook to your own Google Drive by selecting File > Save a copy in Drive.
+
+- The project ID is already set in the code (46f752f6-63af-49e3-a01c-b579cde1e0e1). When running the script, you will be prompted to enter your IBM Watsonx API key.
+
+- Run the main script and input your nutrition-related query when prompted (e.g., “Create a weekly vegetarian meal plan for a 28-year-old female with PCOS aiming for weight loss.”).
+
+- The agent will generate personalized meal plans and suggestions based on your input.
+
+
 
 ## 💡 Solution Overview
 
